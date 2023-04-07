@@ -7,7 +7,7 @@
 
 <script>
 import HeaderItem from './components/HeaderItem.vue';
-import FooterItem from './components/FooterItem.vue'
+import FooterItem from './components/FooterItem.vue';
 
 export default {
   name: 'App',
