@@ -35,6 +35,19 @@ export default {
     }
 
     requestAnimationFrame(raf)
+
+
+    let previosuTitle = document.title
+    window.addEventListener('blur', ()=> {
+      // cuando cambie de pestaña
+      previosuTitle = document.title
+      document.title = "aaaa"
+    })
+
+    window.addEventListener('focus', ()=> {
+      // titulo normal
+      document.title = previosuTitle 
+    })
   }
 }
 </script>
